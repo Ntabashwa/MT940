@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MT940 Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>MT940 Converter</h1>
+      <form id="uploadForm">
+        <div class="form-group">
+          <label for="file">Upload MT940 File:</label>
+          <input type="file" id="file" required />
+        </div>
+        <div class="form-group">
+          <label for="outputType">Select Output Format:</label>
+          <select id="outputType" required>
+            <option value="excel">Excel</option>
+            <option value="xml">XML</option>
+            <option value="ofx">OFX</option>
+          </select>
+        </div>
+        <button type="submit">Convert</button>
+      </form>
+      <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
